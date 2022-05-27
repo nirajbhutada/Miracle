@@ -1,0 +1,547 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+    <title>Miracles By Sheetal | Best Makeup Artist in Pune, Maharashtra.</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+
+    <link href="css/miracles.css" rel="stylesheet" />
+    <link href="css/redmond.datepick.css" rel="stylesheet" />
+
+    <script src="js/jquery-2.2.4.min.js"></script>
+    <script src="js/jquery.backstretch.js"></script>
+    <script src="js/unslider.js"></script>
+
+    <link href="css/jquery.fancybox.css" rel="stylesheet" />
+    <script src="js/jquery.fancybox.js"></script>
+    <script src="js/jquery.plugin.js"></script>
+    <script src="js/jquery.datepick.js"></script>
+
+    <script type="text/javascript"
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvO0AHfg1cuND1KXbw3t5xZr5p4PVrEk4">
+    </script>
+    <script type="text/javascript">
+        function initialize() {
+
+            var myLatlng = new google.maps.LatLng(18.511207, 73.773837);
+
+            var mapOptions = {
+                center: myLatlng,
+                zoom: 18, scrollwheel: false, draggable: true,
+            };
+
+            var map = new google.maps.Map(document.getElementById("map-canvas"), mapOptions);
+            var genericart = {
+                path: 'M95.35,50.645c0,13.98-11.389,25.322-25.438,25.322c-14.051,0-25.438-11.342-25.438-25.322   c0-13.984,11.389-25.322,25.438-25.322C83.964,25.322,95.35,36.66,95.35,50.645 M121.743,50.645C121.743,22.674,98.966,0,70.866,0   C42.768,0,19.989,22.674,19.989,50.645c0,12.298,4.408,23.574,11.733,32.345l39.188,56.283l39.761-57.104   c1.428-1.779,2.736-3.654,3.916-5.625l0.402-0.574h-0.066C119.253,68.516,121.743,59.874,121.743,50.645',
+                fillColor: '#c61f83',
+                fillOpacity: 1,
+                scale: 0.3
+            };
+            var marker = new google.maps.Marker({
+                position: myLatlng,
+                icon: genericart,
+                map: map,
+                title: "Miracles By Sheetal",
+                animation: google.maps.Animation.DROP
+            });
+            //alert("test");
+            marker.addListener('click', toggleBounce);
+            function toggleBounce() {
+                if (marker.getAnimation() !== null) {
+                    marker.setAnimation(null);
+                } else {
+                    marker.setAnimation(google.maps.Animation.BOUNCE);
+                }
+            }
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+</head>
+<body>
+    <div class="absTopArrow">
+        <a href="#header"><div class="topArrowIco"></div></a>
+    </div>
+    <!-- Header Starts -->
+    <div class="topLine"></div>
+    <div id="header" class="width100">
+        <div class="pad_15">
+            <div class="col_1140 txtCenter posRelative">
+                <a href="tel:+919766622286" class="topCall">+91 976-662-2286</a>
+                <a href="#" title="Miracles By Sheetal">
+                    <img src="images/miracles-logo.png" alt="Miracles By Sheetal, Top Makeup Artist" class="logo" />
+                </a>
+                <!-- Navigation Starts -->
+                <div id="topNavPanel">
+                    <ul id="topNav">
+                        <a href="javascript:void(0)" class="closeBtn" onclick="closeNav()">&times;</a>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#products">Products</a></li>
+                        <li><a href="#tips">Tips</a></li>
+                        <li><a href="#videos">Videos</a></li>
+                        <li><a href="#appointment">Appointment</a></li>
+                        <li><a href="#map-canvas">Contact Us</a></li>
+                    </ul>
+                    <!--<div class="float_clear"></div>-->
+                    <div id="mobNav">
+                        <span class="space20"></span>
+                        <div class="pad_30 txtLeft">
+                            <span class="tiny upperCase clrWhite letter-sp-3 mrg_B_15">Phone:</span>
+                            <span class="space1"></span>
+                            <a href="tel:+919766622286" class="semiMedium clrWhite light txtDecNone">+91 976-662-2286</a>
+
+                            <span class="space40"></span>
+                            <span class="tiny upperCase clrWhite letter-sp-3 mrg_B_15">Email:</span>
+                            <a href="mailto:miracles.by.sheetal@gmail.com" class="regular clrWhite breakWord txtDecNone">miracles.by.sheetal&#64;gmail&#46;com</a>
+
+                            <span class="space40"></span>
+                            <span class="tiny upperCase clrWhite letter-sp-3">Follow Us:</span>
+                            <span class="space5"></span>
+                            <a href="#" target="_blank" class="topFb" title="Follow Us on facebook"></a>
+                            <a href="#" target="_blank" class="topyouTube" title="Follow Us on youtube"></a>
+                            <a href="#" target="_blank" class="topInsta" title="Follow Us on Instagram"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="float_clear"></div>
+                <a id="navBtn" onclick="openNav()"></a>
+                <!-- Navigation Ends -->
+            </div>
+        </div>
+    </div>
+    <!-- Header Ends -->
+    <!-- Banner Starts -->
+    <div id="slideBanner"></div>
+    <!-- Banner Ends -->
+    <!-- About Info Starts -->
+    <span class="space50"></span>
+    <div class="col_1140" id="about">
+        <h1 class="xx-large upperCase txtCenter clrBlack semiBold letter-sp-2">Miracles By Sheetal</h1>
+        <span class="shortLine themeBgQtr margin_auto"></span>
+        <div class="col_1_2">
+            <div class="pad_15">
+                <div class="width80 posRelative">
+                    <div class="aboutRelImg">
+                        <img src="images/about-miracles.jpg" alt="" class="width100" />
+                    </div>
+                    <div class="aboutAbsImg">
+                        <img src="images/about-miracles-abs.jpg" alt="" class="width100" />
+                    </div>
+                </div>
+                <div class="float_clear"></div>
+            </div>
+        </div>
+        <div class="col_1_2">
+            <div class="pad_TB_15 pad_L_30">
+                <h2 class="themeClrPrime semiBold large upperCase letter-sp-2 mrg_B_5">About Us</h2>
+                <p class="paraTxt mrg_B_10">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+                <p class="paraTxt mrg_B_10">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here' Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+        </div>
+        <div class="float_clear"></div>
+    </div>
+    <span class="space50"></span>
+    <!-- About Info Ends -->
+    <!-- Services Starts -->
+    <div class="bgServ" id="services">
+        <div class="bgServOverlay">
+            <span class="space50"></span>
+            <div class="col_1140">
+                <h2 class="xx-large upperCase txtCenter clrWhite semiBold letter-sp-2">Our Services</h2>
+                <span class="shortLine margin_auto bgWhite"></span>
+                <div class="col_1_2">
+                    <div class="pad_15">
+                        <div class="container">
+                            <div class="imgBox">
+                                <img src="images/bridal-makeup-by-sheetal.jpg" class="width100" />
+                                <div class="servName txtCenter"><span class="medium clrWhite semiBold letter-sp-2">Bridal Makeup</span></div>
+                            </div>
+                            <div class="content">
+                                <div class="pad_30">
+                                    <h3 class="large clrWhite mrg_B_10">Bridal Makeup</h3>
+                                    <p class="clrWhite line-ht-5 mrg_B_25">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    <a href="#" class="readAnchWhite semiBold upperCase letter-sp-2">Know More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col_1_2">
+                    <div class="pad_15">
+                        <div class="container">
+                            <div class="imgBox">
+                                <img src="images/fashion-makeup-by-sheetal.jpg" class="width100" />
+                                <div class="servName txtCenter"><span class="medium clrWhite semiBold letter-sp-2">Fashion Makeup</span></div>
+                            </div>
+                            <div class="content">
+                                <div class="pad_30">
+                                    <h3 class="large clrWhite mrg_B_10">Fashion Makeup</h3>
+                                    <p class="clrWhite line-ht-5 mrg_B_25">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                                    <a href="#" class="readAnchWhite semiBold upperCase letter-sp-2">Know More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="float_clear"></div>
+                <div id="otherServ" class="txtCenter">
+                    <div class="servCol">
+                        <div class="pad_15">
+                            <div class="servBg">
+                                <div class="pad_10">
+                                    <h4 class="semiMedium clrWhite">Simple Look</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servCol">
+                        <div class="pad_15">
+                            <div class="servBg">
+                                <div class="pad_10">
+                                    <h4 class="semiMedium clrWhite">Party Look</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servCol">
+                        <div class="pad_15">
+                            <div class="servBg">
+                                <div class="pad_10">
+                                    <h4 class="semiMedium clrWhite">Cocktail Look</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servCol">
+                        <div class="pad_15">
+                            <div class="servBg">
+                                <div class="pad_10">
+                                    <h4 class="semiMedium clrWhite">HD Makeup Look</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servCol">
+                        <div class="pad_15">
+                            <div class="servBg">
+                                <div class="pad_10">
+                                    <h4 class="semiMedium clrWhite">3D Makeup Look</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="servCol">
+                        <div class="pad_15">
+                            <div class="servBg">
+                                <div class="pad_10">
+                                    <h4 class="semiMedium clrWhite">HD Airbrush Look</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <span class="space50"></span>
+        </div>
+    </div>
+    <!-- Services Ends -->
+    <!-- Products Starts -->
+    <span class="space50" id="products"></span>
+    <div class="col_1140 posRelative">
+        <h4 class="xx-large upperCase txtCenter clrBlack semiBold letter-sp-2">Our Products</h4>
+        <span class="shortLine themeBgQtr margin_auto"></span>
+        <div class="testPad">
+            <div class="products">
+                <ul>
+                    <li>
+                        <img src="images/products/anarity-cosmetic-products.jpg" alt="Cosmetic Products by Miracles" class="width100" />
+                    </li>
+                    <li>
+                        <img src="images/products/anarity-wellness-products.jpg" alt="Wellness Products by Miracles" class="width100" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <span class="space50"></span>
+    <!-- Products Ends -->
+    <!-- Tips Starts -->
+    <div class="col_1140" id="tips">
+        <ul class="tipsList txtCenter">
+            <li><a href="#">Homemade Remedy For Beautiful Skin</a></li>
+            <li><a href="#">Skin Care Tips</a></li>
+            <li><a href="#">How to get clear Skin</a></li>
+            <li><a href="#">Tips for Oily Skin</a></li>
+
+            <li><a href="#">How to get clear Skin</a></li>
+            <li><a href="#">Tips for Oily Skin</a></li>
+            <li><a href="#">Skin Care Tips</a></li>
+            <li><a href="#">Homemade Remedy For Beautiful Skin</a></li>
+        </ul>
+    </div>
+    <!--<div class="width100 bgGrey posRelative">
+        <div class="pad_10">
+            <div class="tipsTag">
+                <div class="pad_11">
+                    <span class="fontRegular">Beauty &amp; Fashion Tips</span>
+                </div>
+            </div>
+            <div class="container">
+                <ul id="myUl" class="er-controls">
+                    <li><a href="#">Homemade Remedy For Beautiful Skin</a></li>
+                    <li><a href="#">Skin Care Tips</a></li>
+                    <li><a href="#">How to get clear Skin</a></li>
+                    <li><a href="#">Tips for Oily Skin</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>-->
+    <!-- Tips Ends -->
+    <!-- Videos Starts -->
+    <span class="space50"></span>
+    <div class="col_1140 txtCenter" id="videos">
+        <h4 class="xx-large upperCase clrBlack semiBold letter-sp-2">Videos</h4>
+        <span class="shortLine themeBgQtr margin_auto"></span>
+        <div class="col_1_3 txtCenter">
+            <div class="pad_15">
+                <a data-fancybox href="https://www.youtube.com/watch?v=0XbcCHGUfX4" class="txtDecNone" title="Step by step makeup tutorial Real bride by shweta gaur at shweta gaur makeup artist and academy">
+                    <div class="themeBgPrime">
+                        <img src="http://img.youtube.com/vi/0XbcCHGUfX4/0.jpg" alt="Step by step makeup tutorial Real bride by shweta gaur at shweta gaur makeup artist and academy" class="width100">
+                        <div class="pad_10">
+                            <span class="clrWhite line-ht-5 fontRegular">Step By Step Makeup Tutorial</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col_1_3 txtCenter">
+            <div class="pad_15">
+                <a data-fancybox href="https://www.youtube.com/watch?v=MRcCHKuMUTM" class="txtDecNone" title="Advanced Bridal Makeup By Shweta Gaur At Shweta Gaur Makeup Artist And Academy">
+                    <div class="themeBgPrime">
+                        <img src="http://img.youtube.com/vi/MRcCHKuMUTM/0.jpg" alt="Advanced Bridal Makeup By Shweta Gaur At Shweta Gaur Makeup Artist And Academy" class="width100">
+                        <div class="pad_10">
+                            <span class="clrWhite line-ht-5 fontRegular">Advanced Bridal Makeup</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="col_1_3 txtCenter">
+            <div class="pad_15">
+                <a data-fancybox href="https://www.youtube.com/watch?v=p9T1n-1RfnY" class="txtDecNone" title="Step by step makeup tutorial Real bride BY Shweta Gaur at shweta gaur makeup artist and academy">
+                    <div class="themeBgPrime">
+                        <img src="http://img.youtube.com/vi/p9T1n-1RfnY/0.jpg" alt="Step by step makeup tutorial Real bride BY Shweta Gaur at shweta gaur makeup artist and academy" class="width100">
+                        <div class="pad_10">
+                            <span class="clrWhite line-ht-5 fontRegular">Step By Step Makeup Tutorial</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="float_clear"></div>
+    </div>
+    <span class="space50"></span>
+    <!-- Videos Ends -->
+    <!-- Appointment Starts -->
+    <div class="width100" id="appointment">
+        <div class="width50">
+            <div class="bgAppSidebar"></div>
+        </div>
+        <!--<asp:UpdatePanel ID="UpdatePanel1" runat="server">
+            <contenttemplate>-->
+                <div class="width50 bgLightGrey">
+                    <div class="pad_30">
+                        <h3 class="large clrBlack semiBold upperCase letter-sp-3">Appointment</h3>
+                        <span class="shortLine themeBgQtr"></span>
+                        <div>
+                                <div class="pad_15">
+                                    <div class="appt-container container">
+                                        <div class="qr-container">
+                                            <img src="/miracle/images/contact-us-qr.png" class="width100">
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="pad_15">
+                                    <div class="container">
+                                        <div class="txtCenter">
+                                            <a href = 'https://api.whatsapp.com/send?phone=919766622286&text=Thank%20you%20for%20contacting%20Miracles-by-Sheetal.%20We%20are%20Award-winning%20Bridal%20&%20Fashion%20make-up%20artist..%20%20Let%20us%20know%20how%20we%20can%20help%20to%20make%20your%20next%20event%20memorable%20!!!' target='_blank' class='themeBgPrime clrWhite line-ht-5 fontRegular pad_30 txtDecNone book-your-appt'>Book Your Appointment !</a>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        </div>
+                        
+                        <!-- <div class="w100 mrg_B_15">
+                            <span class="labelCap">Name :*</span> -->
+                            <!--<asp:TextBox ID="txtName" CssClass="textBox w95" MaxLength="50" placeholder="Full Name (Surname first)" runat="server"></asp:TextBox>-->
+                            <!-- <input id="txtName" type="text" class="textBox w95" placeholder="Full Name (Surname first)" />
+                        </div> -->
+                        <!-- <div class="w100 mrg_B_15">
+                            <span class="labelCap">Email Id :*</span> -->
+                            <!--<asp:TextBox ID="txtMail" CssClass="textBox w95" MaxLength="30" placeholder="Your Email Address" runat="server"></asp:TextBox>-->
+                            <!-- <input id="txtMail" type="text" class="textBox w95" placeholder="Your Email Address" />
+                        </div> -->
+                        <!-- <div class="w100 mrg_B_15">
+                            <span class="labelCap">Mobile No :*</span> -->
+                            <!--<asp:TextBox ID="txtMobile" CssClass="textBox w95" MaxLength="10" placeholder="Without Country Code" runat="server"></asp:TextBox>-->
+                            <!-- <input id="txtMobile" type="text" class="textBox w95" placeholder="Without Country Code" />
+                        </div> -->
+                        <!-- <div class="w100 mrg_B_15">
+                            <span class="labelCap">Appointment Date :*</span> -->
+                            <!--<asp:TextBox ID="txtMobile" CssClass="textBox w95" MaxLength="10" placeholder="Without Country Code" runat="server"></asp:TextBox>-->
+                            <!-- <input id="txtDate" type="text" class="textBox w95" placeholder="Click Here to open Calendar" />
+                        </div>
+                        <div class="w100 mrg_B_15">
+                            <span class="labelCap">Message :*</span> -->
+                            <!--<asp:TextBox ID="txtMsg" CssClass="textBox w95" TextMode="MultiLine" Height="150" runat="server"></asp:TextBox>-->
+                            <!-- <textarea id="txtMsg" rows="5" cols="20" class="textBox w95"></textarea>
+                        </div>
+                        <span class="space15"></span> -->
+                        <!--<asp:Button ID="btnSubmit" runat="server" CssClass="buttonForm" Text="SEND" />-->
+                        <!-- <input id="btnSubmit" type="button" value="Submit" class="buttonForm semiBold upperCase" /> -->
+                    </div>
+                </div>
+            <!--</contenttemplate>
+        </asp:UpdatePanel>-->
+        <div class="float_clear"></div>
+    </div>
+    <!-- Appointment Ends -->
+    <!-- Contact Starts -->
+    <div id="map-canvas"></div>
+    <!-- Contact Ends -->
+    <!-- Footer Starts -->
+    <div class="footer" id="footer">
+        <span class="space30"></span>
+        <div class="col_1140">
+            <div class="col_1_3">
+                <div class="pad_15">
+                    <h5 class="footerCaption clrWhite mrg_B_10 upperCase letter-sp-2">Miracles By Sheetal</h5>
+                    <img src="images/miracle-footer-logo.jpg" class="footerLogo" />
+                    <span class="space15"></span>
+                    <span class="mrg_B_15 small">&copy; 2019 All Rights Reserved. Miracles By Sheetal</span>
+
+                    <a href="#" target="_blank" class="fb socialIco" title="Follow us on facebook"></a>
+                    <a href="#" target="_blank" class="youtube socialIco" title="Follow us on Twitter"></a>
+                    <a href="#" target="_blank" class="insta socialIco" title="Follow us on Instagram"></a>
+                </div>
+            </div>
+            <div class="col_1_3">
+                <div class="pad_15">
+                    <h5 class="footerCaption clrWhite mrg_B_10 upperCase letter-sp-2">Opening Hours</h5>
+                    <h5 class="regular themeClrThr mrg_B_5">Monday To Saturday</h5>
+                    <span class="line-ht-8 small">10:00 AM - 07:00 PM</span>
+                    <span class="space15"></span>
+                    <h5 class="regular themeClrThr mrg_B_5">Sunday</h5>
+                    <span class="line-ht-8 small">10:00 AM - 02:00 PM</span>
+                </div>
+            </div>
+            <div class="col_1_3">
+                <div class="pad_15">
+                    <h5 class="footerCaption clrWhite mrg_B_10 upperCase letter-sp-2">Contact Info</h5>
+                    <span class="addr line-ht-5 small">C1202 Vallonia Society, Behind Maratha Mandir, Bavdhan, Pune 411021, Maharashtra, India.</span>
+                    <span class="space15"></span>
+                    <a href="mailto:info@bharpetkha.com" class="txtDecNone"><span class="email line-ht-5 small">miracles.by.sheetal&#64;gmail&#46;com</span></a>
+                    <span class="space15"></span>
+                    <a href="tel:+919766622286" class="txtDecNone"><span class="call line-ht-5 small">+91 976-662-2286</span></a>
+                </div>
+            </div>
+            <div class="float_clear"></div>
+        </div>
+        <span class="space30"></span>
+        <span class="footerLine"></span>
+        <div class="col_1140 txtCenter">
+            <div class="pad_10">
+                <span class="clrGrey small">Website By <a href="" target="_blank" class="intellect" title=""></a></span>
+            </div>
+        </div>
+    </div>
+    <!-- Footer Ends -->
+    <script type="text/javascript">
+        function openNav() {
+            document.getElementById("topNavPanel").style.width = "320px";
+            document.getElementById("navBtn").style.zIndex = "0";
+        }
+        function closeNav() {
+            document.getElementById("topNavPanel").style.width = "0";
+            document.getElementById("navBtn").style.zIndex = "5";
+        }
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            //alert("test");
+            $("#slideBanner").backstretch(
+            ["images/banner/banner-1.jpg",
+            "images/banner/banner-2.jpg",
+            "images/banner/banner-3.jpg",
+            "images/banner/banner-4.jpg"],
+            { duration: 3000, fade: 750 });
+        });
+    </script>
+    <script> $(function () { $('.products').unslider() })</script>
+    
+    <script type="text/javascript">
+        $(function () {
+            $('#txtDate').datepick({ dateFormat: 'dd/mm/yyyy' });
+        });
+    </script>
+    <script type="text/javascript">
+        // Select all links with hashes
+        $('a[href*="#"]')
+        // Remove links that don't actually link to anything
+          .not('[href="#"]')
+          .not('[href="#0"]')
+          .click(function (event) {
+              // On-page links
+              if (
+                location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
+                &&
+                location.hostname == this.hostname
+              ) {
+                  // Figure out element to scroll to
+                  var target = $(this.hash);
+                  target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                  // Does a scroll target exist?
+                  if (target.length) {
+                      // Only prevent default if animation is actually gonna happen
+                      event.preventDefault();
+                      $('html, body').animate({
+                          scrollTop: target.offset().top
+                      }, 1000, function () {
+                          // Callback after animation
+                          // Must change focus!
+                          var $target = $(target);
+                          //$target.focus();
+                          if ($target.is(":focus")) { // Checking if the target was focused
+                              return false;
+                          } else {
+                              $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
+                              //$target.focus(); // Set focus again
+                          };
+                      });
+                  }
+              }
+          });
+    </script>
+    <script type="text/javascript">
+        $(window).scroll(function () {
+            var topIcon = $('.topArrowIco'),
+                scroll = $(window).scrollTop();
+            //alert("Msg");
+            if (scroll >= 250) topIcon.addClass('fixedArrow');
+
+            else topIcon.removeClass('fixedArrow');
+            //alert("Msg");
+        });
+
+    </script>
+</body>
+</html>
